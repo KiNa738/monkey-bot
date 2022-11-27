@@ -28,7 +28,7 @@ async function run() {
             '--incognito',
           ],
         headless: true,
-        executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' // Windows
+        // executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' // Windows
      });
 
     const page = await browser.newPage()
