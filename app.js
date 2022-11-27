@@ -146,6 +146,7 @@ async function excute(){
     for (let i = 0; i < 1000; i++) {
         try {
             await run()
+            console.log(`Done: ${i}`)
         }
         catch (e) { console.log(e) }
     }
