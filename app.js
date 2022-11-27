@@ -26,6 +26,8 @@ async function run() {
     const browser = await puppeteer.launch({
         args: [
             '--incognito',
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
           ],
         headless: true,
         // executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' // Windows
