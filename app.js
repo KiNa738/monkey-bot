@@ -29,6 +29,7 @@ async function run() {
           ],
         headless: true,
         // executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' // Windows
+        executablePath: '/usr/bin/chromium-browser' // Linux
      });
 
     const page = await browser.newPage()
