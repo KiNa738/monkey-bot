@@ -59,7 +59,7 @@ async function run() {
     
     //click next
     await page.click('#patas > main > article > section > form > div > button')
-    await sleep(600);
+    await sleep(1000);
     
     //select gun
     const gun = Math.floor(Math.random() * 2) + 1;
@@ -71,7 +71,7 @@ async function run() {
     
     //click next
     await page.click('#patas > main > article > section > form > div > button.btn.small.next-button.survey-page-button.user-generated.notranslate')
-    await sleep(600);
+    await sleep(1000);
 
     if(violence == 2) {
         //random text for the violence
@@ -96,7 +96,7 @@ async function run() {
 
         //click next 
         await page.click('#patas > main > article > section > form > div > button.btn.small.next-button.survey-page-button.user-generated.notranslate')
-        await sleep(600);
+        await sleep(1000);
         
         if(resolve == 3) {
             //random text for the resolve
@@ -119,7 +119,7 @@ async function run() {
             
             //click next
             await page.click('#patas > main > article > section > form > div > button.btn.small.next-button.survey-page-button.user-generated.notranslate')
-            await sleep(600);
+            await sleep(1000);
 
             // await page.screenshot({ path: 'screenshots/submit2.png' , fullPage: true})
             console.log("submited--3");
@@ -136,7 +136,7 @@ async function run() {
 
             //click next
             await page.click('#patas > main > article > section > form > div > button.btn.small.next-button.survey-page-button.user-generated.notranslate')
-            await sleep(600);
+            await sleep(1000);
         }
     }
     // await page.screenshot({ path: 'screenshots/submit3.png' , fullPage: true})
@@ -146,7 +146,7 @@ async function run() {
 }
 
 async function excute(){
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 300; i++) {
         try {
             await run()
             console.log(`Done: ${i}`)
