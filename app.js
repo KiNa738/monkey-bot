@@ -142,11 +142,12 @@ async function run() {
     return;
 }
 
-
-for (let i = 0; i < 1000; i++) {
-    run().then(() => {
-        console.log(`Done ${i}`)
-    }).catch((e) => { console.log(e) })
+async function excute(){
+    for (let i = 0; i < 1000; i++) {
+        try {
+            await run()
+        }
+        catch (e) { console.log(e) }
+    }
 }
-
-
+excute()
