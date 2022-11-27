@@ -76,7 +76,7 @@ async function run() {
     if(violence == 2) {
         //random text for the violence
         const violence_text = text[Math.floor(Math.random() * text.length)];
-        console.log(violence_text)
+        // console.log(violence_text)
         await page.type('#question-field-102875812 > div > div > div', violence_text)
         
         //select continue
@@ -85,7 +85,7 @@ async function run() {
         if(continue1 == 2){
             //screen shot
             // await page.screenshot({ path: 'screenshots/submit1.png' , fullPage: true})
-            console.log("submited--1");
+            // console.log("submited--1");
             await browser.close()
             return;
         }
@@ -101,7 +101,7 @@ async function run() {
         if(resolve == 3) {
             //random text for the resolve
             const resolve_text = text[Math.floor(Math.random() * text.length)];
-            console.log(resolve_text)
+            // console.log(resolve_text)
             await page.type('#question-field-102878417 > div > div > div', resolve_text)
 
             //click end
@@ -109,7 +109,7 @@ async function run() {
 
             //click done
             await page.click('#patas > main > article > section > form > div > button.btn.small.done-button.survey-page-button.user-generated.notranslate')
-            console.log("submited--2");
+            // console.log("submited--2");
             await browser.close()
             return;
         } else if( resolve == 1) {
@@ -122,7 +122,7 @@ async function run() {
             await sleep(1000);
 
             // await page.screenshot({ path: 'screenshots/submit2.png' , fullPage: true})
-            console.log("submited--3");
+            // console.log("submited--3");
             await browser.close()
             return;
         } else {
@@ -140,7 +140,7 @@ async function run() {
         }
     }
     // await page.screenshot({ path: 'screenshots/submit3.png' , fullPage: true})
-    console.log("submited--4");
+    // console.log("submited--4");
     await browser.close()
     return;
 }
